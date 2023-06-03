@@ -1,0 +1,239 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    /* box-sizing: border-box; */
+}
+ .logo{ 
+    width:23%;
+    display: flex;
+ }
+
+.logo img{
+    /* display: inline-block; */
+    width: 23%;
+    padding-left: 20vh;
+    border-radius :50px;
+}
+nav{
+    display: flex;
+    justify-content:left;
+    align-items: center;
+position: relative;
+padding-right: 15vh;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    padding: 0 32px 0 0;    
+}
+nav::before{
+    content:"";
+    background-color: black;
+    position:absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+
+nav  li a {
+    padding: 0 20px 0 20px;
+    margin-left: 12px;
+     text-decoration: none; /*for removing underline */
+    color: black;
+    margin-right: 22px;
+    font-weight: bolder;
+    
+}
+nav  li a:hover{
+    border: 1px solid black;
+    color: white;
+
+}
+body{
+    width: 100%; 
+     height: 200%;
+    background-image: url(apple.jpg);
+    background-repeat:no-repeat;
+    position: absolute;
+    background-size:cover;
+    background-position: top;
+}
+body::before{
+    content: "";
+    background-color: black;
+    position: absolute;
+    height:100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.2;
+}
+.main{
+    padding-bottom:100px;
+    height: 100vh;
+    width: 100%;
+}
+ .text{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40vh;
+    color: white;
+}
+ #txt h1{
+    font-size: 45px;
+    font-weight: bolder;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial,;
+    padding-top: 20px;
+}
+.text p{
+    font-size: 20px;
+    color: white;
+    padding-top: 22px;
+    
+}
+button{
+    margin-top: 22px;
+}
+button.app{
+    /* border-radius: 30px; */
+    /* background-color: black; */
+    /* color: white; */
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;/*this padding is used to make the button big*/
+    border-radius: 30px;
+    transition: 0.4s;
+}
+button.app:hover{
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 30px;/*this radius is the radius of border that is white */
+    cursor: pointer;
+}
+button.app1{
+    /* border-radius: 30px; */
+    /* background-color: black; */
+    /* color: white; */
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    border: 2px solid transparent;
+    font-weight: bold;
+    padding: 13px 30px;/*this padding is used to make the button big*/
+    border-radius: 30px;
+    transition: 0.4s;
+}
+button.app1:hover{
+    background-color:transparent;
+    border: 2px solid white;
+    border-radius: 30px;/*this radius is the radius of border that is white */
+    cursor: pointer;
+}
+.about{
+    height: 84vh;
+    padding-bottom: 22px;
+    background-color: white;
+
+    
+}
+h1.tet{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    padding-bottom: 45px;
+     font-size: 45px;
+ } 
+h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: wheat;
+    
+}
+.container{
+    display:inline-flex;
+    flex-direction: column;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: wrap;
+    /* height: 50vh; */
+    margin-left: 38px;
+    margin-bottom: 22px;
+    padding: 10px 22px 10px 22px;
+    width: 25vw;
+    border: 2px solid red;
+    background-color: black;
+    color: white;
+    border-radius: 23px;
+}
+.container .box img{
+    display: block;
+    margin: auto;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    height: 150px;
+    width: 100px;
+    border-radius: 22px;
+    border: 2px solid  white;
+
+}
+.client{
+    height: 20vh;
+    width: 100%;
+    padding-top: 3vh;
+    position: relative;
+}
+.client::before{
+    content: "";
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+    background:black;
+}
+h1.or{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    /* padding-bottom: 22px; */
+    font-size: 45px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.container1{
+    position: relative;
+    bottom: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+}
+.items{
+padding-left: 45px;
+margin-left: 35px;
+}
+
+.items a{
+    text-decoration: none;
+    color:red;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: red;
+    background-color: black;
+    height: 8vh;
+    font-size: 10px bold white;
+}
